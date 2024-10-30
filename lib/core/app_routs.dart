@@ -1,9 +1,13 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-import 'package:task/view/screens/splash_screen/splash_screen.dart';
 
-class AppRouts{
+import '../view/screens/auth/controller/singin.dart';
+import '../view/screens/splash_screen/splash_screen.dart';
+
+class AppRouts {
   static const String splashscreen = "/splashscreen";
+  static const String signIn = "/signIn";
   static List<GetPage> routes = [
-    GetPage(name: splashscreen, page: ()=>SplashScreen()),
+    GetPage(name: splashscreen, page: () => SplashScreen()),
+    GetPage(name: signIn, page: () => SignInScreen()),
   ];
 }
