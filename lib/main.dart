@@ -2,9 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:task/core/app_routs.dart';
+import 'package:task/core/dependency.dart';
 import 'package:task/global/theme/dark_theme.dart';
 
 void main(){
+  DependencyInjection di = DependencyInjection();
+  di.dependencies();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
