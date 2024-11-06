@@ -17,4 +17,12 @@ class AppString{
   static const signUp = "Sign Up";
   static const logIn = "Log In";
   static const dontHaveAnyAccount = "Don’t have any account?";
+  static const createAccount = "Create Account";
+  static const fullName = "Full name";
+  static const String fieldCantBeEmpty = "Field can't be empty";
+  static const String enterAValidName = "Enter a valid name";
+  static const phoneNumber = "Phone Number";
+  static const confirmPassword = "Confirm Password";
+  static const alreadyHaveAnAccount = "already have an account?";
+
 }

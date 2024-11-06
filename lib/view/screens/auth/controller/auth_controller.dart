@@ -7,4 +7,12 @@ class AuthController extends GetxController{
 
   Rx<TextEditingController> emailController = TextEditingController().obs;
   Rx<TextEditingController> passwordController = TextEditingController().obs;
+  Rx<TextEditingController> fullNameController = TextEditingController().obs;
+  Rx<TextEditingController> signupEmailController = TextEditingController().obs;
+  Rx<TextEditingController> phoneNumberController = TextEditingController().obs;
+  Rx<TextEditingController> signupPasswordController =
+      TextEditingController().obs;
+  Rx<TextEditingController> confirmPasswordController =
+      TextEditingController().obs;
+
 }

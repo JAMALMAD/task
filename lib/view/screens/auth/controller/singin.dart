@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:task/utils/static_string/static_string.drat.dart';
 import 'package:task/view/screens/auth/controller/auth_controller.dart';
+import 'package:task/view/screens/auth/controller/sign_up.dart';
 
 import '../../../../utils/app_color/app_colors.dart';
 import '../../../widget/custom_bottom.dart';
@@ -119,7 +120,7 @@ class SignInScreen extends StatelessWidget {
                   ),
                   CustomButton(
                     fillColor: AppColors.redNormal,
-                    onTap: () async {
+                    onTap: ()  {
                       if (formKey.currentState!.validate()) {}
                     },
                     title: AppString.logIn,
@@ -137,7 +138,12 @@ class SignInScreen extends StatelessWidget {
 
                       ///========================= Sign Up Button ========================
                       TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => SignUpScreen()),
+                            );
+                          },
                           child: const CustomText(
                               color: AppColors.blueNormal,
                               fontSize: 14,
