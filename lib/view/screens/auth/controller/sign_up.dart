@@ -219,6 +219,7 @@ class SignUpScreen extends StatelessWidget {
                 fillColor: AppColors.redNormal,
                 onTap: () {
                   if (formKey.currentState!.validate()) {}
+                  Get.toNamed(AppRouts.otpVerify);
                 },
                 title: AppString.signUp,
               ),
@@ -226,7 +227,6 @@ class SignUpScreen extends StatelessWidget {
               SizedBox(
                 height: 32.h,
               ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

@@ -24,5 +24,7 @@ class AppString{
   static const phoneNumber = "Phone Number";
   static const confirmPassword = "Confirm Password";
   static const alreadyHaveAnAccount = "already have an account?";
-
+  static const checkYourEmail = "Check your email";
+  static const wehaveSendAnOTP = "We have send an OTP to your email address";
+  static const verifyCode = "Verify code";
 }

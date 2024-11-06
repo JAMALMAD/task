@@ -14,5 +14,5 @@ class AuthController extends GetxController{
       TextEditingController().obs;
   Rx<TextEditingController> confirmPasswordController =
       TextEditingController().obs;
-
+  RxString activationCode = "".obs;
 }
